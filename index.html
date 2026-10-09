@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>She's in the Glow — Haute Alpine & Après-Ski Couture</title>
+  <meta name="description" content="Crafted for the high-altitude light. Limited luxury outerwear and après-ski couture by She's in the Glow.">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: 高定衬线 Cormorant Garamond + 现代无衬线 Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- AI-Friendly: 结构化数据 JSON-LD (专供 ChatGPT / Perplexity / Google 等识别) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://shesintheglow.com/#organization",
+        "name": "She's in the Glow",
+        "url": "https://shesintheglow.com",
+        "logo": "https://shesintheglow.com/images/logo.png",
+        "description": "High-altitude luxury après-ski couture and technical down outerwear."
+      },
+      {
+        "@type": "Product",
+        "@id": "https://shesintheglow.com/#aurora-parka",
+        "name": "The Aurora Parka — Champagne Gold",
+        "image": "https://shesintheglow.com/images/aurora-parka.jpg",
+        "description": "Lustrous champagne gold ski parka with detachable fur hood, 800-fill power goose down, 20,000mm waterproofing.",
+        "brand": {
+          "@type": "Brand",
+          "name": "She's in the Glow"
+        },
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "EUR",
+          "price": "1250",
+          "availability": "https://schema.org/PreOrder",
+          "url": "https://shesintheglow.com/#reserve"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: #0b0c0e;
+      color: #ffffff;
+      overflow-x: hidden;
+    }
+    .font-serif-luxury {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    /* 磨砂玻璃质感，完全匹配图上卡片效果 */
+    .frosted-glass {
+      background: rgba(228, 230, 235, 0.76);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+    .text-glow {
+      text-shadow: 0 0 25px rgba(240, 222, 185, 0.4);
+    }
+    .pulse-ring {
+      animation: pulseGlow 2.5s infinite;
+    }
+    @keyframes pulseGlow {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.35); opacity: 0; }
+      100% { transform: scale(0.95); opacity: 0; }
+    }
+  </style>
+</head>
+<body class="bg-[#0b0c0e] min-h-screen relative selection:bg-[#dfc49c] selection:text-black">
+
+  <!-- 顶部奢华导航栏 -->
+  <header class="fixed top-0 left-0 right-0 z-40 px-6 md:px-12 py-5 flex items-center justify-between pointer-events-auto bg-gradient-to-b from-black/85 via-black/40 to-transparent">
+    <!-- 左侧菜单 -->
+    <nav class="hidden md:flex items-center space-x-9 text-[11px] tracking-[0.22em] font-medium text-white/85">
+      <a href="#world" class="hover:text-[#dfc49c] transition-colors uppercase">The Glow World</a>
+      <a href="#collections" class="hover:text-[#dfc49c] transition-colors uppercase">Collections</a>
+    </nav>
+
+    <!-- 居中：品牌官方 Logo (包含四瓣花形徽标 + 专属字体排版 + 星芒✦) -->
+    <a href="#" class="flex flex-col items-center justify-center group cursor-pointer">
+      <!-- 官方花瓣星徽 -->
+      <svg class="w-8 h-8 md:w-9 md:h-9 text-[#f6f2e9] drop-shadow-[0_0_12px_rgba(246,242,233,0.65)] group-hover:scale-105 transition-transform" viewBox="0 0 100 100" fill="currentColor">
+        <!-- 外层4瓣圆润主花瓣 -->
+        <path d="M50 2 C50 24 35 39 12 39 C35 39 50 54 50 76 C50 54 65 39 88 39 C65 39 50 24 50 2 Z"/>
+        <!-- 中间凹陷镂空区 -->
+        <path d="M50 23 C50 37 39 48 25 48 C39 48 50 59 50 73 C50 59 61 48 75 48 C61 48 50 37 50 23 Z" fill="#0b0c0e"/>
+        <!-- 中心微光星钻 -->
+        <path d="M50 34 C50 42 43 49 35 49 C43 49 50 56 50 64 C50 56 57 49 65 49 C57 49 50 42 50 34 Z" fill="#f6f2e9"/>
+      </svg>
+      <!-- 官方字标 + W角星光 -->
+      <div class="flex items-center mt-1">
+        <span class="font-serif-luxury text-base md:text-lg tracking-wider text-white font-medium">She's in the Glow</span>
+        <span class="text-[#dfc49c] text-xs ml-0.5 transform -translate-y-0.5">✦</span>
+      </div>
+    </a>
+
+    <!-- 右侧菜单与工具 -->
+    <div class="flex items-center space-x-7 md:space-x-8 text-[11px] tracking-[0.22em] font-medium text-white/85">
+      <a href="#craftsmanship" class="hidden md:inline hover:text-[#dfc49c] transition-colors uppercase">Craftsmanship</a>
+      <button onclick="toggleStylist()" class="hover:text-[#dfc49c] transition-colors uppercase">The Concierge</button>
+      <div class="relative cursor-pointer hover:text-[#dfc49c] transition-colors">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <!-- 全屏主视觉 Hero 区 -->
+  <main class="relative w-full h-screen overflow-hidden flex items-center justify-center">
+
+    <!-- 主视觉背景图 (金色日光雪山滑雪者大片) -->
+    <div class="absolute inset-0 z-0">
+      <img 
+        src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=85&w=2400&auto=format&fit=crop" 
+        alt="She's in the Glow Alpine Skier in Champagne Gold Parka" 
+        class="w-full h-full object-cover object-center filter brightness-[0.96]"
+      />
+      <!-- 渐变暗角保证文字易读性 -->
+      <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-black/40 pointer-events-none"></div>
+    </div>
+
+    <!-- 交互微光瞄准热点 (+ SHOP THE LOOK) -->
+    <div class="absolute left-[38%] md:left-[39%] top-[45%] md:top-[46%] z-20 flex items-center group cursor-pointer" onclick="toggleProductCard()">
+      <div class="relative flex items-center justify-center">
+        <span class="pulse-ring absolute inline-flex h-9 w-9 rounded-full bg-white/40"></span>
+        <div class="w-8 h-8 md:w-9 md:h-9 rounded-full bg-white/25 backdrop-blur-md border border-white/80 flex items-center justify-center text-white text-base font-light shadow-lg hover:scale-110 transition-transform">
+          +
+        </div>
+      </div>
+      <div class="ml-3 hidden sm:flex items-center text-[10px] md:text-[11px] tracking-[0.25em] font-medium uppercase text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.85)]">
+        <span class="w-4 h-px bg-white/70 mr-2 inline-block"></span>
+        Shop The Look
+      </div>
+    </div>
+
+    <!-- 右上角磨砂玻璃单品展示卡片 (The Aurora Parka) -->
+    <div id="product-card" class="absolute top-24 md:top-28 right-4 md:right-14 z-30 w-[240px] md:w-[260px] frosted-glass rounded-xl p-4 shadow-2xl transition-all duration-300">
+      <div class="flex justify-end mb-1">
+        <button onclick="toggleProductCard()" class="text-neutral-500 hover:text-black p-1 text-sm font-semibold transition-colors">✕</button>
+      </div>
+      <!-- 雪服静物图预览 -->
+      <div class="w-full h-44 bg-gradient-to-b from-white/50 to-white/10 rounded-lg flex items-center justify-center overflow-hidden mb-3">
+        <img 
+          src="https://images.unsplash.com/photo-1544923246-77307dd654cb?q=80&w=800&auto=format&fit=crop" 
+          alt="The Aurora Parka Champagne Gold with fur hood" 
+          class="max-h-full object-contain filter drop-shadow-md hover:scale-105 transition-transform duration-500"
+        />
+      </div>
+      <h3 class="text-xs font-semibold tracking-wider uppercase text-neutral-900 leading-tight">
+        The Aurora Parka — <br><span class="text-neutral-700">Champagne Gold</span>
+      </h3>
+      <div class="text-xs font-bold text-neutral-900 mt-1">€1,250</div>
+      <div class="text-[9px] text-neutral-600 font-medium tracking-tight mt-1 border-t border-black/10 pt-1">
+        800 Fill Goose Down | Waterproof 20,000mm
+      </div>
+      <button onclick="openBooking()" class="w-full mt-3 py-2 bg-[#cfd3d8]/85 hover:bg-neutral-900 hover:text-white text-neutral-900 text-[10px] font-semibold tracking-[0.2em] uppercase rounded transition-all shadow-sm">
+        Reserve Now
+      </button>
+    </div>
+
+    <!-- 底部主视觉文本排版 -->
+    <div class="absolute bottom-16 md:bottom-20 right-6 md:right-24 z-20 max-w-xl text-right md:text-left flex flex-col md:items-start items-end">
+      <div class="font-serif-luxury text-3xl md:text-5xl lg:text-6xl font-light tracking-wide text-white leading-none text-glow">
+        COLLECTION 01 — <br>
+        <span class="italic text-[#dfc49c]">THE ALPINE GLOW</span>
+      </div>
+      <p class="text-xs md:text-sm text-neutral-300 font-light tracking-widest mt-4 max-w-md">
+        Crafted for the high-altitude light.<br class="hidden md:inline"> Limited luxury outerwear.
+      </p>
+      <button onclick="toggleStylist()" class="mt-6 px-7 py-2.5 border border-[#dfc49c]/70 hover:border-white hover:bg-white hover:text-black text-[#dfc49c] text-[10px] tracking-[0.25em] uppercase font-medium rounded-sm transition-all duration-300 backdrop-blur-sm">
+        Explore The Drop
+      </button>
+    </div>
+
+    <!-- 右下角专属 AI 顾问浮动入口 (白色圆角胶囊按钮) -->
+    <div class="fixed bottom-6 right-6 z-40">
+      <button onclick="toggleStylist()" class="flex items-center bg-white/95 hover:bg-white text-neutral-900 px-4 py-2.5 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.4)] backdrop-blur-md transition-all hover:scale-105 border border-white/60">
+        <!-- 官方花瓣小微标 -->
+        <svg class="w-5 h-5 text-neutral-900 mr-2.5" viewBox="0 0 100 100" fill="currentColor">
+          <path d="M50 4 C50 25 36 39 15 39 C36 39 50 53 50 74 C50 53 64 39 85 39 C64 39 50 25 50 4 Z"/>
+          <path d="M50 26 C50 40 40 50 26 50 C40 50 50 60 50 74 C50 60 60 50 74 50 C60 50 50 40 50 26 Z" fill="#ffffff"/>
+          <path d="M50 36 C50 44 44 50 36 50 C44 50 50 56 50 64 C50 56 56 50 64 50 C56 50 50 44 50 36 Z" fill="#000000"/>
+        </svg>
+        <div class="text-left">
+          <div class="text-[9px] font-bold tracking-[0.15em] uppercase leading-none">The Glow Concierge</div>
+          <div class="text-[8px] text-neutral-500 font-medium leading-tight mt-0.5">Your Alpine Stylist</div>
+        </div>
+      </button>
+    </div>
+
+  </main>
+
+  <!-- 侧边滑出：AI 造型顾问抽屉 -->
+  <aside id="stylist-drawer" class="fixed inset-y-0 right-0 w-full md:w-[390px] bg-[#121316] border-l border-white/10 z-50 transform translate-x-full transition-transform duration-300 p-6 flex flex-col justify-between shadow-2xl">
+    <div>
+      <div class="flex items-center justify-between pb-4 border-b border-white/10">
+        <div class="flex items-center">
+          <span class="text-[#dfc49c] mr-2 text-sm">✦</span>
+          <span class="font-serif-luxury text-lg tracking-wider text-white">The Glow Concierge</span>
+        </div>
+        <button onclick="toggleStylist()" class="text-neutral-400 hover:text-white text-lg">✕</button>
+      </div>
+
+      <p class="text-[11px] text-neutral-400 font-light mt-4 leading-relaxed">
+        欢迎使用专属阿尔卑斯造型顾问。选择您的滑雪胜地，AI 将针对阳光反射率与气候提供定制化分层穿搭建议：
+      </p>
+
+      <!-- 雪场快捷选择 -->
+      <div class="mt-5 space-y-2">
+        <label class="text-[10px] tracking-[0.2em] uppercase text-neutral-400 font-semibold">选择滑雪目的地：</label>
+        <div class="grid grid-cols-2 gap-2 text-[10px]">
+          <button onclick="setResort('St. Moritz', '强阳光反射 / -8°C', '香槟金反光微粒具有柔化雪道强光特质，配 800蓬羽绒保证山顶防风。')" class="p-2 border border-white/10 rounded hover:border-[#dfc49c] text-left transition-colors">St. Moritz</button>
+          <button onclick="setResort('Zermatt', '高海拔马特洪峰 / -12°C', '建议内搭美利奴羊毛速干层，Aurora 派克大衣防风雪裙能完全隔绝高海拔风暴。')" class="p-2 border border-white/10 rounded hover:border-[#dfc49c] text-left transition-colors">Zermatt</button>
+          <button onclick="setResort('Aspen', '深粉雪 / -6°C', '透气防水膜保持核心干燥，金色束腰剪裁适合全天滑行到 Après-ski 晚宴。')" class="p-2 border border-white/10 rounded hover:border-[#dfc49c] text-left transition-colors">Aspen</button>
+          <button onclick="setResort('Courchevel', '法式奢华社交 / -5°C', '可拆卸高定毛领与金属质感在露台香槟酒会具有极高辨识度。')" class="p-2 border border-white/10 rounded hover:border-[#dfc49c] text-left transition-colors">Courchevel</button>
+        </div>
+      </div>
+
+      <!-- 动态结果框 -->
+      <div id="ai-response" class="mt-5 p-4 rounded bg-white/5 border border-white/10 text-xs text-neutral-300 leading-relaxed hidden">
+      </div>
+    </div>
+
+    <div class="pt-4 border-t border-white/10">
+      <button onclick="openBooking()" class="w-full py-3 bg-[#dfc49c] hover:bg-white text-neutral-900 text-[10px] font-semibold tracking-[0.2em] uppercase rounded transition-colors shadow-lg">
+        Reserve This Look
+      </button>
+    </div>
+  </aside>
+
+  <!-- 极简交互脚本 -->
+  <script>
+    function toggleProductCard() {
+      const card = document.getElementById('product-card');
+      card.classList.toggle('hidden');
+    }
+
+    function toggleStylist() {
+      const drawer = document.getElementById('stylist-drawer');
+      drawer.classList.toggle('translate-x-full');
+    }
+
+    function setResort(resort, climate, advice) {
+      const res = document.getElementById('ai-response');
+      res.classList.remove('hidden');
+      res.innerHTML = `
+        <div class="text-[#dfc49c] font-semibold mb-1">【${resort}】${climate}</div>
+        <p class="text-neutral-300 text-[11px]">${advice}</p>
+      `;
+    }
+
+    function openBooking() {
+      alert("已锁定预约：The Aurora Parka (Champagne Gold) 首批胶囊限量配额。即将跳转结算通道！");
+    }
+  </script>
+</body>
+</html>
